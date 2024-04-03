@@ -36,9 +36,6 @@ $(document).keypress(function(){
     nextSequence();
 }
 });
-
-
-
 $(".btn").on("click",function(){
     var userChosenColour = this.id;
     userClickedPattern.push(userChosenColour);
@@ -67,7 +64,6 @@ function playSound(name){
         yellow.play();
     }
 }
-
 function animatePress(currentColour){
    var activeButton = $("#"+currentColour).addClass("pressed");
 
@@ -75,8 +71,6 @@ function animatePress(currentColour){
         activeButton.removeClass("pressed");
     }, 100);
 }
-
-
 function checkPattern(answer){
      if(answer === gamePattern[buttonClicks]){
         if(gamePattern.length ===  userClickedPattern.length){
