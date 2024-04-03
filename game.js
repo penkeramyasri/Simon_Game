@@ -85,7 +85,6 @@ function checkPattern(answer){
             }, 800);
         }
         else if(gamePattern.length > userClickedPattern.length){
-            alert("Click next button");
             buttonClicks++;
         }
      }
